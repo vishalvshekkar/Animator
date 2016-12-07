@@ -58,7 +58,7 @@ Each block is executed after the completion of the last block.
 
 3. You could pass duration, delay and animationOptions along with with spring damping and initial velocity constants to the function. You could instead choose to leave out duration or animatiOptions  or delay selectively when invoking the function.
 
-4. The `animate` method can accept a completion block to let you knwo when the entire batch of animations that have been chained together completes.
+4. The `animate` method can accept a completion block to let you know when the entire batch of animations that have been chained together completes.
 
     ```
     Animator.addAnimations() {
