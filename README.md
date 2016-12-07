@@ -38,7 +38,7 @@ Animator.addAnimations() {
 ```
 Each block is executed after the completion of the last block.
 
-#Features of Animator
+#Features of `Animator`
 
 1. Supports setting duration, delay and animationOptions.
 
