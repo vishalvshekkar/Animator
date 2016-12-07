@@ -1,9 +1,7 @@
 ![alt tag](https://raw.githubusercontent.com/vishalvshekkar/Animator/master/Resources/AnimatorCover.png)
 
 # Animator
-A block-based UIView animation helper which enables consecutive animations to be performed with ease.
-
-![alt tag](https://raw.githubusercontent.com/vishalvshekkar/Animator/master/Resources/AnimatorDemoExample.gif)
+Animator is a block-based `UIView` animation helper which enables consecutive animations to be performed with ease.
 
 #Using `Animator`
 
@@ -73,6 +71,7 @@ Animator.addAnimations() {
     //Completion of all animations chained above
 }
 ```
+![alt tag](https://raw.githubusercontent.com/vishalvshekkar/Animator/master/Resources/AnimatorDemoExample.gif)
 
 #Other Facts
 
