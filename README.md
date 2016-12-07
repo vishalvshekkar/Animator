@@ -5,6 +5,14 @@ A block-based UIView animation helper which enables consecutive animations to be
 
 #Using `Animator`
 
+Most simply, call `addAnimations:` with a closure that contains the animation code on `Animator`. Invoke `animate` to begin animating. This animates whatever statements are in the block with a 1s duration (default).
+
+```
+Animator.addAnimations() {
+    //Animation code
+}.animate()
+```
+
 1. Every block of animations that need to be performed during one animation cycle needs to be passed as a parameter to `addAnimations:`
 2. `addAnimations:` can be chained.
 3. The blocks passed with `addAnimations:` are executed in the ordered these methods are invoked.
@@ -12,14 +20,6 @@ A block-based UIView animation helper which enables consecutive animations to be
 5. Call `animate` after all animations have been added to begin animating from the first block.
 6. `addAnimations:` method contains various parameters that can be passed along to tweak the animation behavior.
 7. Most of these parameters have been given default values to get you started with ease.
-
-Most simply, call `addAnimations:` with a closure that contains the animation code on Animator. Invoke `animate` to begin animating. This animates whatever code's written with a 1s duration (default).
-
-```
-Animator.addAnimations() {
-    //Animation code
-}.animate()
-```
 
 Many animation blocks can be chained together with very simple and easy-on-the-eye syntax as seen below.
 
