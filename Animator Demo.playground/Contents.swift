@@ -30,5 +30,10 @@ Animator.addAnimations() {
     }.addAnimations(usingSpringWithDamping: 0.7, initialSpringVelocity: 0) {
         smallView.frame.origin = CGPoint(x: 380, y: 380)
         smallView3.frame.origin = CGPoint(x: 0, y: 0)
-}.animate()
+}.addAnimations(withDuration: 1, delay: 1, options: [UIViewAnimationOptions.curveLinear], animations: {
+    smallView.frame.origin = CGPoint(x: 260, y: 380)
+    smallView3.frame.size = CGSize(width: 80, height: 80)
+}).animate {
+    print("Completed")
+}
 
