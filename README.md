@@ -1,7 +1,7 @@
 ![alt tag](https://raw.githubusercontent.com/vishalvshekkar/Animator/master/Resources/AnimatorCover.png)
 
 # Animator
-Animator is a block-based `UIView` animation helper which enables consecutive animations to be performed with ease.
+Animator is a block-based `UIView` animation helper which enables complex animations to be performed with ease.
 
 When there's a complex multi-step animation that needs to be performed, we usually break these down into smaller animatable steps and animate these smaller steps one after the other. To do this, every new animation step needs to be invoked after the completion of the last step. When using the stock `UIView` `animate` methods, the code gets very ugly and unmanageable with a complex animation. If you add every step into a method and invoke these methods in the completion blocks of the last animation step, the code readability reduces slightly as there's no continuation.
 
