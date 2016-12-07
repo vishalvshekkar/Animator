@@ -3,6 +3,10 @@
 # Animator
 Animator is a block-based `UIView` animation helper which enables consecutive animations to be performed with ease.
 
+When there's a complex multi-step animation that needs to be performed, we usually break these down into smaller animatable steps and animate these smaller steps one after the other. To do this, every new animation step needs to be invoked after the completion of the last step. When using the stock `UIView` `animate` methods, the code gets very ugly and unmanageable with a complex animation. If you add every step into a method and invoke these methods in the completion blocks of the last animation step, the code readability reduces slightly as there's no continuation.
+
+As a developer, when you visualize an animation, and when you need to prototype that and polish over it, having a readable codebase helps a lot. It helps you better understand the steps and fix bugs easily. That's where `Animator` comes in to help.
+
 #Using `Animator`
 
 Most simply, call `addAnimations:` with a closure that contains the animation code on `Animator`. Invoke `animate` to begin animating. This animates whatever statements are in the block with a 1s duration (default).
