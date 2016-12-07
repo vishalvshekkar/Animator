@@ -1,7 +1,9 @@
+![alt tag](https://raw.githubusercontent.com/vishalvshekkar/Animator/master/Resources/AnimatorCover.png)
+
 # Animator
 A block-based UIView animation helper which enables consecutive animations to be performed with ease.
 
-![alt tag](https://raw.githubusercontent.com/vishalvshekkar/Animator/master/AnimatorDemoExample.gif)
+![alt tag](https://raw.githubusercontent.com/vishalvshekkar/Animator/master/Resources/AnimatorDemoExample.gif)
 
 #Using `Animator`
 
@@ -77,4 +79,4 @@ Animator.addAnimations() {
 1. Developed on Swift 3.0.1
 2. The playground contains a demo which you can go through.
 3. You need to open the assistant editor in the Playground to view the output animation. (View -> Assistant Editor -> Show Assistant Editor) or the keyboard shortcut option+command+return (if you haven't changed that).
-4. To use `Animator` in your project, just drag the file 'Animator.swift' into your project which is available in the 'sources' directory in this repository. (Copy it to your project directory)
+4. To use `Animator` in your project, just drag the file 'Animator.swift' into your project which is available in the 'Source' directory in this repository. (Copy it to your project directory)
