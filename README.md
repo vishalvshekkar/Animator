@@ -42,35 +42,35 @@ Each block is executed after the completion of the last block.
 
 1. Supports setting duration, delay and animationOptions.
 
-```
-Animator.addAnimations(withDuration: 1, delay: 1, options: [UIViewAnimationOptions.curveLinear]) {
-    //Animation code
-}
-```
+    ```
+    Animator.addAnimations(withDuration: 1, delay: 1, options: [UIViewAnimationOptions.curveLinear]) {
+        //Animation code
+    }
+    ```
 
 2. Supports animations with spring damping and initial velocity constants.
 
-```
-Animator.addAnimations(usingSpringWithDamping: 0.7, initialSpringVelocity: 0) {
-    //Animation code
-}
-```
+    ```
+    Animator.addAnimations(usingSpringWithDamping: 0.7, initialSpringVelocity: 0) {
+        //Animation code
+    }
+    ```
 
 3. You could pass duration, delay and animationOptions along with with spring damping and initial velocity constants to the function. You could instead choose to leave out duration or animatiOptions  or delay selectively when invoking the function.
 
 4. The `animate` method can accept a completion block to let you knwo when the entire batch of animations that have been chained together completes.
 
-```
-Animator.addAnimations() {
-    //Animation code
-}.addAnimations() {
-    //Animation code
-}.addAnimations() {
-    //Animation code
-}.animate { 
-    //Completion of all animations chained above
-}
-```
+    ```
+    Animator.addAnimations() {
+        //Animation code
+    }.addAnimations() {
+        //Animation code
+    }.addAnimations() {
+        //Animation code
+    }.animate { 
+        //Completion of all animations chained above
+    }
+    ```
 ![alt tag](https://raw.githubusercontent.com/vishalvshekkar/Animator/master/Resources/AnimatorDemoExample.gif)
 
 #Other Facts
